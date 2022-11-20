@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <title>Frontend Mentor | Destination</title>
+    <link rel="stylesheet" href="../css/myframework.css" />
+    <link rel="stylesheet" href="../css/destination.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+    <img src="../assets/shared/logo.svg" alt="">
+    </div>
+    <img class="open" src="../assets/shared/icon-hamburger.svg" id="megaMenu" alt="">
+    <img class="close" src="../assets/shared/icon-close.svg" id="close" alt="">
+    <ul class="nav">
+    <li><a href="../index.html"><span>00</span>Home</a></li>
+    <li class="active"><a href="#"><span>01</span>Destination</a></li>
+    <li><a href="crew.html"><span>02</span>Crew</a></li>
+    <li><a href="technology.html"><span>03</span>Technology</a></li>
+    </ul>
+</header>
+
+<div class="landing">
+    <picture>
+    <source srcset="../assets/destination/background-destination-mobile.jpg" media="(max-width: 767px)">
+    <source srcset="../assets/destination/background-destination-tablet.jpg" media="(max-width: 991px)">
+    <img src="../assets/destination/background-destination-desktop.jpg" alt="">
+    </picture>
+    <div class="container">
+    <div class="box">
+        <h4><span>01</span> Pick your destination</h4>
+        <picture>
+            <img src="../assets/destination/image-moon.png" alt="">
+        </picture>
+    </div>
+    <div class="box data">
+        <ul>
+            <li data-index="1" class="active">Moon</li>
+            <li data-index="2">Mars</li>
+            <li data-index="3">Europa</li>
+            <li data-index="4">Titan</li>
+        </ul>
+        <h3>Moon</h3>
+        <p>
+            See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <div class="info">
+            <div class="distance">
+                <span>Avg. distance</span>
+                <div class="km">384,400 km</div>
+            </div>
+            <div class="time">
+                <span>Est. travel time</span>
+                <div class="days">3 days</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

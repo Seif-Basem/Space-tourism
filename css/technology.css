@@ -1,0 +1,218 @@
+:root{
+    --black: #0c0e18;
+    --light: #d2d8f9;
+    --white: #ffffff;
+    --font-one: "Bellefair", serif;
+    --font-two: "Barlow Condensed", sans-serif;
+    --font-body: "Barlow", sans-serif;
+}
+
+/* start landing */
+.landing{
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+}
+.landing picture img{
+    width: 100%;
+    height: 100vh;
+}
+.landing  h4{
+    color: var(--light);
+    font-family: var(--font-two);
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-transform: uppercase;
+}
+@media (max-width: 1669px) {
+    .landing h4{
+        left: 16%;
+    }
+}
+@media (max-width: 1499px) {
+    .landing h4{
+        left: 12%;
+    }
+}
+@media (max-width: 1399px) {
+    .landing h4{
+        left: 9%;
+    }
+}
+@media (max-width: 1299px) {
+    .landing h4{
+        left: 6%;
+    }
+}
+@media (max-width: 991px) {
+    .landing h4{
+        margin-top: -5%;
+        font-size: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .landing h4{
+        font-size: 19px;
+        left: 22%;
+        top: 17%;
+    }
+}
+.landing h4 span{
+    color: rgb(255, 255, 255, 20%);
+    font-weight: bold;
+    margin-right: 18px;
+}
+.landing .content{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+@media (max-width: 991px) {
+    .landing .content{
+        flex-direction: column-reverse;
+        gap: 40px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .landing .content{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
+.landing .content .info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    width: 70%;
+}
+@media (max-width: 991px) {
+    .landing .content .info{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+.landing .content ul{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 10%;
+    gap: 30px;
+}
+@media (max-width: 991px) {
+    .landing .content ul{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+.landing .content ul li{
+    border: 1px solid var(--white);
+    width: fit-content;
+    color: var(--white);
+    padding: 25px 37px;
+    border-radius: 50%;
+    font-family: var(--font-one);
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 991px) {
+    .landing .content ul li{
+        padding: 25px 30px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .landing .content ul li{
+        padding: 15px 20px;
+    }
+}
+.landing .content ul li.active{
+    background-color: var(--white);
+    color: var(--black);
+}
+.landing .content .info .box{
+    width: 50%;
+}
+@media (max-width: 991px) {
+    .landing .content .info .box{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .landing .content .info .box{
+        padding: 0 10px;
+    }
+}
+.landing .content .info .box span{
+    color: var(--light);
+    display: block;
+    font-family: var(--font-two);
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+    .landing .content .info .box span{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+.landing .content .info .box h3{
+    color: var(--white);
+    font-family: var(--font-one);
+    font-size: 55px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+    .landing .content .info .box h3{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+}
+.landing .content .info .box p{
+    color: var(--light);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    font-size: 18px;
+    width: 70%;
+}
+@media (max-width: 991px) {
+    .landing .content .info .box p{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
+.landing .content .box{
+    width: 30%;
+}
+@media (max-width: 991px) {
+    .landing .content .box{
+        width: 100%;
+    }
+}
+.landing .content .box picture img{
+    width: 100%;
+    height: 100%;
+}
+/* end landing */
